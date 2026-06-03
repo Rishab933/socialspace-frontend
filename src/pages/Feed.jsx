@@ -6,7 +6,7 @@ const Feed = () => {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:3000/posts')
+        axios.get('https://socialspace-backend.onrender.com/posts')
         .then((res) => {
             setPosts(res.data.post)
         })

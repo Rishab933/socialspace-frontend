@@ -25,7 +25,7 @@ const CreatePost = () => {
 
     const formData = new FormData(e.target);
 
-    axios.post("http://localhost:3000/create-post", formData).then((res) => {
+    axios.post("https://socialspace-backend.onrender.com/create-post", formData).then((res) => {
       //console.log(res)
       alert("Post Submitted!");
       setImagePreview(null);
